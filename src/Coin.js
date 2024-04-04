@@ -12,7 +12,7 @@ function Coin(props) {
   console.log(cointitlestyle);
   useEffect(() => {
     fetch(
-      `${"https://api.coingecko.com/api/v3/coins/"}${id.toLowerCase()}${"/market_chart?vs_currency=usd&days=30&interval=hourly"}`
+      `${"https://api.coingecko.com/api/v3/coins/"}${id.toLowerCase()}${"/market_chart?vs_currency=usd&days=30"}`
     )
       .then((response) => response.json())
       .then((data) => {
